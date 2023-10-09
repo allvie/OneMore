@@ -22,7 +22,7 @@ namespace River.OneMoreAddIn.Commands
 	/// </summary>
 	internal class InsertBoxCommand : Command
 	{
-		private const string Shading = "#D0CECE";
+		private const string Shading = "#F2F2F2";
 		private const string TitleColor = "#000000";
 		private const string TextColor = "#000000";
 
@@ -85,7 +85,12 @@ namespace River.OneMoreAddIn.Commands
 			row = table.AddRow();
 			cell = row.Cells.First();
 
-			if (// cursor is not null if selection range is empty
+            if (!addTitle)
+            {
+                cell.ShadingColor = Shading;
+            }
+
+            if (// cursor is not null if selection range is empty
 				cursor != null &&
 				// selection range is a single line containing a hyperlink
 				!(page.SelectionSpecial && page.SelectionScope == SelectionScope.Empty))
