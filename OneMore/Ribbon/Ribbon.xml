@@ -895,7 +895,17 @@
             id="ribApplyStyleButton5"
             label="大标题"
             imageMso="StylesPane"
+            onAction="ApplyStyle2Cmd"/>
+          <button
+            id="ribApplyStyleButton6"
+            label="失效"
+            imageMso="StylesPane"
             onAction="ApplyStyle5Cmd"/>
+          <button
+            id="ribApplyStylesButton1"
+            label="应用样式"
+            imageMso="ApplyStylesPane"
+            onAction="ApplyStylesCmd"/>
           <button
             id="ribApplyStyleButton4"
             label="小标题"
@@ -906,16 +916,6 @@
             label="错误"
             imageMso="StylesPane"
             onAction="ApplyStyle3Cmd"/>
-          <button
-            id="ribApplyStylesButton1"
-            label="应用样式"
-            imageMso="ApplyStylesPane"
-            onAction="ApplyStylesCmd"/>
-          <button
-            id="ribInsertCodeBoxButton1"
-            imageMso="CodeEdit"
-            label="代码框"
-            onAction="InsertCodeBoxCmd"/>
           <button
             id="ribInsertTextBoxButton1"
             imageMso="TextBoxInsert"

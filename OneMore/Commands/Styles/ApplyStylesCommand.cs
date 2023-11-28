@@ -137,8 +137,9 @@ namespace River.OneMoreAddIn.Commands
 						quick.SetAttributeValue("italic", style.IsItalic.ToString().ToLower());
 						quick.SetAttributeValue("bold", style.IsBold.ToString().ToLower());
 						quick.SetAttributeValue("underline", style.IsUnderline.ToString().ToLower());
+						quick.SetAttributeValue("strikethrough", style.IsStrikethrough.ToString().ToLower());
 
-						quick.Attribute("fontSize").Value = style.FontSize;
+                        quick.Attribute("fontSize").Value = style.FontSize;
 
 						applied = true;
 					}
